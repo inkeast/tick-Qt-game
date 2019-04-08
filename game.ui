@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Game</class>
+ <widget class="QWidget" name="Game">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1377</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/sourse/stack_1.jpg);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>600</y>
+     <width>181</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>华文新魏</family>
+     <pointsize>36</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 36pt &quot;华文新魏&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>60</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Arabic</family>
+     <pointsize>20</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;Adobe Arabic&quot;;
+color: rgb(255, 255, 255);
+background: transparent;
+</string>
+   </property>
+   <property name="text">
+    <string>能量</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>10</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>方正字迹-少壮简体</family>
+     <pointsize>26</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 26pt &quot;方正字迹-少壮简体&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>抓捕者</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>方正字迹-少壮简体</family>
+     <pointsize>26</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 26pt &quot;方正字迹-少壮简体&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>逃亡者</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>791</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/sourse/stack_3.jpg);</string>
+   </property>
+   <property name="sceneRect">
+    <rectf>
+     <x>0.000000000000000</x>
+     <y>0.000000000000000</y>
+     <width>0.000000000000000</width>
+     <height>0.000000000000000</height>
+    </rectf>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>600</y>
+     <width>181</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 36pt &quot;华文新魏&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>68</width>
+     <height>12</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="pover_energy_progressBar">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>70</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {   border: 1px solid grey;   border-radius: 5px;   background-image: url(:/sourse/null.jpg);}
+
+QProgressBar::chunk {
+background-color: rgb(85, 0, 255);  width: 20px;}
+QProgressBar {   border: 1px solid grey;   border-radius: 5px;   text-align: center;}
+</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="runner_skill_1_progressBar">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>410</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {   border: 1px solid grey;   border-radius: 5px;   background-image: url(:/sourse/null.jpg);}
+
+QProgressBar::chunk {
+background-color: rgb(255, 0, 0);  width: 20px;}
+QProgressBar {   border: 1px solid grey;   border-radius: 5px;   text-align: center;}
+</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="runner_skill_2_progressBar">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>450</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {   border: 1px solid grey;   border-radius: 5px;   background-image: url(:/sourse/null.jpg);}
+
+QProgressBar::chunk {
+background-color: rgb(255, 0, 0);  width: 20px;}
+QProgressBar {   border: 1px solid grey;   border-radius: 5px;   text-align: center;}
+</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="runner_skill_3_progressBar">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>490</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {   border: 1px solid grey;   border-radius: 5px;   background-image: url(:/sourse/null.jpg);}
+
+QProgressBar::chunk {
+background-color: rgb(255, 0, 0);  width: 20px;}
+QProgressBar {   border: 1px solid grey;   border-radius: 5px;   text-align: center;}
+</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="catcher_skill_1_progressBar">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>420</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {   border: 1px solid grey;   border-radius: 5px;   background-image: url(:/sourse/null.jpg);}
+
+QProgressBar::chunk {
+background-color: rgb(170, 0, 255) ; width: 20px;}
+QProgressBar {   border: 1px solid grey;   border-radius: 5px;   text-align: center;}
+</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="catcher_skill_2_progressBar">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>460</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {   border: 1px solid grey;   border-radius: 5px;   background-image: url(:/sourse/null.jpg);}
+
+QProgressBar::chunk {
+background-color: rgb(170, 0, 255) ; width: 20px;}
+QProgressBar {   border: 1px solid grey;   border-radius: 5px;   text-align: center;}
+</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="catcher_skill_3_progressBar">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>500</y>
+     <width>141</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {   border: 1px solid grey;   border-radius: 5px;   background-image: url(:/sourse/null.jpg);}
+
+QProgressBar::chunk {
+background-color: rgb(170, 0, 255) ; width: 20px;}
+QProgressBar {   border: 1px solid grey;   border-radius: 5px;   text-align: center;}
+</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="runner_skill_1_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Adobe Arabic&quot;;
+color: rgb(255, 255, 255);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>---</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="runner_skill_2_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>450</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Adobe Arabic&quot;;
+color: rgb(255, 255, 255);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>---</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="runner_skill_3_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>490</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Adobe Arabic&quot;;
+color: rgb(255, 255, 255);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>---</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="catcher_skill_2_label">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>465</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Adobe Arabic&quot;;
+color: rgb(255, 255, 255);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>---</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="catcher_skill_3_label">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>502</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Adobe Arabic&quot;;
+color: rgb(255, 255, 255);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>---</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="catcher_skill_1_label">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>420</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Adobe Arabic&quot;;
+color: rgb(255, 255, 255);
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>---</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="heart_image">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>70</y>
+     <width>91</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/sourse/heart.png);
+background: transparent;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="heart">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>31</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+font: 30pt &quot;方正字迹-少壮简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

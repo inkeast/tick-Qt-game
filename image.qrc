@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sourse/floor.jpg</file>
+        <file>sourse/floor_copy.jpg</file>
+        <file>sourse/monster.jpg</file>
+        <file>sourse/null.jpg</file>
+        <file>sourse/runner.gif</file>
+        <file>sourse/skill_3.jpg</file>
+        <file>sourse/stack_1.jpg</file>
+        <file>sourse/stack_2.jpg</file>
+        <file>sourse/stack_3.jpg</file>
+        <file>sourse/wall.jpg</file>
+        <file>sourse/wall--.jpg</file>
+        <file>sourse/heart.png</file>
+        <file>sourse/light.jpg</file>
+    </qresource>
+</RCC>

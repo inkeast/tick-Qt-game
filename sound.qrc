@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sourse/boom.wav</file>
+        <file>sourse/fly.wav</file>
+        <file>sourse/freze.wav</file>
+        <file>sourse/go.wav</file>
+        <file>sourse/ice.mp3</file>
+        <file>sourse/to4.wav</file>
+        <file>sourse/create.wav</file>
+        <file>sourse/eat.wav</file>
+        <file>sourse/dead.wav</file>
+    </qresource>
+</RCC>
